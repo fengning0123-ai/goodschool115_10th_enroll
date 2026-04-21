@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="zh-TW">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顧群文教115(118畢) 高一英文、數學、物化班</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100%;
+      font-size: 18px;
+    }
+    
+    html {
+      height: 100%;
+    }
+    
+    .checkbox-custom {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      accent-color: #3b82f6;
+    }
+    
+    .subject-card {
+      background: #f8fafc;
+      border: 2px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+    
+    .subject-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .subject-card.selected {
+      background: #eff6ff;
+      border-color: #3b82f6;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        font-size: 20px;
+      }
+      
+      .subject-card {
+        grid-template-columns: 30px 1fr !important;
+        gap: 14px !important;
+        padding: 24px 18px !important;
+      }
+      
+      .subject-buttons {
+        grid-column: 1 / -1 !important;
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      
+      .subject-buttons button {
+        flex: 1;
+        min-width: 100px;
+        font-size: 1rem !important;
+        padding: 12px 10px !important;
+      }
+      
+      .payment-methods-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .summary-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .discount-table-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .checkbox-custom {
+        width: 28px !important;
+        height: 28px !important;
+      }
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div style="max-width: 1200px; margin: 0 auto; padding: 24px; width: 100%;">
+   <div style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(30, 64, 175, 0.3); text-align: center;">
+    <h1 id="main-title" style="font-size: 2.5rem; font-weight: 900; margin: 0 0 12px 0; line-height: 1.2;">顧群文教115(118畢) 高一英文、數學、物化班</h1>
+    <p id="subtitle" style="font-size: 1.4rem; margin: 0; opacity: 0.95; font-weight: 600;">奠定基礎 × 系統整合 × 小班制輔導</p>
+   </div>
+   
+   <div style="background: white; border-radius: 8px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+    <h2 style="font-size: 1.75rem; font-weight: 700; color: #1e40af; margin-bottom: 18px; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">📚 課程介紹與時間</h2>
+    <div style="text-align: center; background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 20px; border-radius: 8px; border: 2px solid #3b82f6;">
+     <div style="font-size: 1.75rem; font-weight: 800; color: #1e40af;">
+      115年7月4日 ～ 116年1月17日
+     </div>
+    </div>
+   </div>
+   
+   <div style="background: white; border-radius: 8px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+    <h2 style="font-size: 1.75rem; font-weight: 700; color: #1e40af; margin-bottom: 18px; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">⏰ 課程時間</h2>
+    <div style="display: grid; gap: 14px;">
+     <div style="background: #ede9fe; padding: 20px; border-radius: 8px; border-left: 5px solid #8b5cf6; box-shadow: 0 2px 4px rgba(139, 92, 246, 0.1);">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;"><span style="font-size: 1.8rem;">🌐</span>
+       <div>
+        <div style="font-weight: 800; color: #5b21b6; font-size: 1.3rem; margin-bottom: 4px;">
+         陳丹尼英文
+        </div>
+        <div style="font-weight: 600; color: #8b5cf6; font-size: 1.1rem;">
+         ⏰ 每週二 18:00～21:30 <span style="color: #dc2626; font-weight: 800;"></span>
+        </div>
+       </div>
+      </div>
+      <div style="color: #475569; font-size: 1.05rem; line-height: 1.9; padding-left: 10px; border-left: 2px solid #a5b4fc; margin-bottom: 14px;"><span style="background: #eef2ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #4338ca;">✦ 跨領域新聞閱讀</span>　 <span style="background: #eef2ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #4338ca;">✦ 文法精闢解析</span>　 <span style="background: #eef2ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #4338ca;">✦ 聽力訓練全英解釋單字</span>　 <span style="background: #eef2ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #4338ca;">✦ 單字拆解背誦</span>
+      </div>
+      <div style="background: #f5f3ff; padding: 12px 14px; border-radius: 6px; color: #5b21b6; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;"><span>📰</span> <span>教材結合英文時事閱讀，活用英文於生活</span>
+      </div>
+     </div>
+     <div style="background: #f0f9ff; padding: 20px; border-radius: 8px; border-left: 5px solid #3b82f6; box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;"><span style="font-size: 1.8rem;">📐</span>
+       <div>
+        <div style="font-weight: 800; color: #1e40af; font-size: 1.3rem; margin-bottom: 4px;">
+         元豪數學
+        </div>
+        <div style="font-weight: 600; color: #3b82f6; font-size: 1.1rem;">
+         ⏰ 每週六 18:00～21:30
+        </div>
+       </div>
+      </div>
+      <div style="color: #475569; font-size: 1.05rem; line-height: 1.9; padding-left: 10px; border-left: 2px solid #93c5fd; margin-bottom: 14px;"><span style="background: #eff6ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #1e40af;">✦ 數學學校進度+思路整合</span>　 <span style="background: #eff6ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #1e40af;">✦ 資優數學</span>　 <span style="background: #eff6ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #1e40af;">✦ 奠定數學基礎</span>　 <span style="background: #eff6ff; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #1e40af;">✦ 整合各單元概念</span>
+      </div>
+      <div style="background: #dbeafe; padding: 12px 14px; border-radius: 6px; color: #1e40af; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;"><span>🧮</span> <span>加強各題型解題引導</span>
+      </div>
+     </div>
+     <div style="background: #fef3c7; padding: 20px; border-radius: 8px; border-left: 5px solid #f59e0b; box-shadow: 0 2px 4px rgba(245, 158, 11, 0.1);">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;"><span style="font-size: 1.8rem;">⚗️</span>
+       <div>
+        <div style="font-weight: 800; color: #92400e; font-size: 1.3rem; margin-bottom: 4px;">
+         高鋒自然
+        </div>
+        <div style="font-weight: 600; color: #d97706; font-size: 1.1rem;">
+         ⏰ 每週日 12:00～15:30
+        </div>
+       </div>
+      </div>
+      <div style="color: #475569; font-size: 1.05rem; line-height: 1.9; padding-left: 10px; border-left: 2px solid #fcd34d; margin-bottom: 14px;"><span style="background: #fffbeb; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #92400e;">✦ 物化學校進度+實力奠定</span>　 <span style="background: #fffbeb; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #92400e;">✦ 物理 超修</span>　 <span style="background: #fffbeb; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #92400e;">✦ 整理公式讓概念理解更清晰</span>　 <span style="background: #fffbeb; padding: 4px 8px; border-radius: 4px; font-weight: 600; color: #92400e;">✦ 自編教材搭配圖形與練習</span>
+      </div>
+      <div style="background: #fef9c3; padding: 12px 14px; border-radius: 6px; color: #92400e; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; gap: 8px;"><span>🔬</span> <span>整理筆記引導學生理解重要理論</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   
+   <div style="background: white; border-radius: 8px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+    <h2 style="font-size: 1.75rem; font-weight: 700; color: #1e40af; margin-bottom: 18px; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">🎁 多科優惠方案 (原價每科 24,300 元)</h2>
+    <div style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); border-radius: 8px; padding: 24px; border: 2px solid #9ca3af;">
+     <div class="discount-table-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 18px;">
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 24px; border-radius: 8px; border: 2px solid #f59e0b;">
+       <div style="text-align: center; font-size: 1.12rem; font-weight: 800; color: #92400e; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #fbbf24;">
+        📅 即日起～5/15(五) 預報
+       </div>
+       <div style="display: grid; gap: 12px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px 18px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><span style="font-weight: 700; color: #1e40af; font-size: 1.1rem;">單科 (85折)</span> <span style="font-weight: 800; color: #dc2626; font-size: 1.15rem;">20,600元</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px 18px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><span style="font-weight: 700; color: #1e40af; font-size: 1.1rem;">任2科 (8折)</span> <span style="font-weight: 800; color: #dc2626; font-size: 1.15rem;">38,800元</span></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px 18px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><span style="font-weight: 700; color: #1e40af; font-size: 1.1rem;">全科 (75折)</span> <span style="font-weight: 800; color: #dc2626; font-size: 1.15rem;">54,600元</span></div>
+       </div>
+      </div>
+      <div style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 24px; border-radius: 8px; border: 2px solid #10b981;">
+       <div style="text-align: center; font-size: 1.12rem; font-weight: 800; color: #065f46; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #34d399;">
+        📅 5/16(六)～7/3(五) 預報
+       </div>
+       <div style="display: grid; gap: 12px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px 18px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><span style="font-weight: 700; color: #065f46; font-size: 1.1rem;">單科 (9折)</span> <span style="font-weight: 800; color: #dc2626; font-size: 1.15rem;">21,800元</span></div>
+       </div>
+      </div>
+      <div style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 24px; border-radius: 8px; border: 2px solid #3b82f6;">
+       <div style="text-align: center; font-size: 1.12rem; font-weight: 800; color: #1e40af; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #60a5fa;">
+        📅 7/4(六)～8/30(日) 報名
+       </div>
+       <div style="display: grid; gap: 12px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px 18px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);"><span style="font-weight: 700; color: #1e40af; font-size: 1.1rem;">單科 (95折)</span> <span style="font-weight: 800; color: #dc2626; font-size: 1.15rem;">23,000元</span></div>
+       </div>
+      </div>
+     </div>
+     
+     <div style="background: white; border-radius: 8px; padding: 20px; border-left: 5px solid #dc2626; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+        <h3 style="margin-top: 0; color: #dc2626; font-size: 1.2rem; margin-bottom: 12px;">⚠️ 報名與各項優惠規定</h3>
+        <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.8; font-weight: 600;">
+            <li>需預繳 <span style="color: #dc2626; font-weight: 800;">1000元/科</span>，才算完成預報。</li>
+            <li><span style="color: #1e40af;">舊生限時獨家優惠：</span>5/15(五)前預報單科85折、任2科原價8折、3科原價75折優惠。</li>
+            <li><span style="color: #1e40af;">團報優惠：</span>7/3(五)前3人團報每人再優1000元，5人團報每人再優2000元 (需拿團報表登記，名單不得重複)。</li>
+            <li><span style="color: #1e40af;">會考優異獎學金：</span>凡會考有【A】者，學費再優500元/科 (需憑成績單)。</li>
+            <li><span style="background: #fee2e2; padding: 2px 6px; border-radius: 4px; color: #991b1b;">8/31(一) 後報名，以原價學費一堂 900元計。</span></li>
+        </ul>
+     </div>
+    </div>
+   </div>
+   
+   <div id="subject-selection-section" style="background: white; border-radius: 8px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+    <h2 style="font-size: 1.75rem; font-weight: 700; color: #1e40af; border-bottom: 2px solid #3b82f6; padding-bottom: 10px; margin-bottom: 20px; line-height: 1.4;">✅ 選擇報名科目</h2>
+    <div id="subjects-container" style="display: grid; gap: 14px; margin-bottom: 20px;">
+     
+     <div class="subject-card" data-subject="english" style="display: grid; grid-template-columns: 35px 80px 1fr 100px auto auto auto; align-items: center; gap: 10px; padding: 18px; border-radius: 8px; font-size: 1.05rem;">
+      <input type="checkbox" class="checkbox-custom" id="english-check">
+      <div style="font-weight: 700; color: #1e40af; font-size: 1.25rem;">🌐 英文</div>
+      <div style="color: #92400e; font-size: 1rem;">送教材費</div>
+      <div class="price-display" id="english-price" style="font-size: 1.15rem; font-weight: 800; color: #dc2626;">NT$ 24,300</div>
+      <div class="subject-buttons" style="display: contents;">
+       <button class="prereport-early-btn" data-subject="english" data-type="early" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>~5/15預報</button>
+       <button class="prereport-mid-btn" data-subject="english" data-type="mid" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>5/16~7/3預報</button>
+       <button class="prereport-late-btn" data-subject="english" data-type="late" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>7/4~8/30報名</button>
+      </div>
+     </div>
+     
+     <div class="subject-card" data-subject="math" style="display: grid; grid-template-columns: 35px 80px 1fr 100px auto auto auto; align-items: center; gap: 10px; padding: 18px; border-radius: 8px; font-size: 1.05rem;">
+      <input type="checkbox" class="checkbox-custom" id="math-check">
+      <div style="font-weight: 700; color: #1e40af; font-size: 1.25rem;">📐 數學</div>
+      <div style="color: #92400e; font-size: 1rem;">送教材費</div>
+      <div class="price-display" id="math-price" style="font-size: 1.15rem; font-weight: 800; color: #dc2626;">NT$ 24,300</div>
+      <div class="subject-buttons" style="display: contents;">
+       <button class="prereport-early-btn" data-subject="math" data-type="early" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>~5/15預報</button>
+       <button class="prereport-mid-btn" data-subject="math" data-type="mid" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>5/16~7/3預報</button>
+       <button class="prereport-late-btn" data-subject="math" data-type="late" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>7/4~8/30報名</button>
+      </div>
+     </div>
+     
+     <div class="subject-card" data-subject="science" style="display: grid; grid-template-columns: 35px 80px 1fr 100px auto auto auto; align-items: center; gap: 10px; padding: 18px; border-radius: 8px; font-size: 1.05rem;">
+      <input type="checkbox" class="checkbox-custom" id="science-check">
+      <div style="font-weight: 700; color: #1e40af; font-size: 1.25rem;">⚗️ 自然</div>
+      <div style="color: #92400e; font-size: 1rem;">送教材費</div>
+      <div class="price-display" id="science-price" style="font-size: 1.15rem; font-weight: 800; color: #dc2626;">NT$ 24,300</div>
+      <div class="subject-buttons" style="display: contents;">
+       <button class="prereport-early-btn" data-subject="science" data-type="early" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>~5/15預報</button>
+       <button class="prereport-mid-btn" data-subject="science" data-type="mid" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>5/16~7/3預報</button>
+       <button class="prereport-late-btn" data-subject="science" data-type="late" style="background: #d1d5db; color: #9ca3af; padding: 10px 12px; border-radius: 6px; font-weight: 600; border: none; cursor: not-allowed; font-size: 0.9rem; white-space: nowrap;" disabled>7/4~8/30報名</button>
+      </div>
+     </div>
+    </div>
+    
+    <div style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; border-radius: 8px; padding: 24px;">
+     <div class="summary-grid" style="display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; font-size: 1.1rem;">
+      <div>
+       <div id="selected-subjects" style="margin-bottom: 10px; font-weight: 600; line-height: 1.6;">已選科目：無</div>
+       <div id="discount-info" style="opacity: 0.9; line-height: 1.6; font-weight: 700; color: #fef08a;"></div>
+      </div>
+      <div style="text-align: right;">
+       <div style="font-size: 1.05rem; opacity: 0.9; margin-bottom: 8px;">總計金額</div>
+       <div id="total-price" style="font-size: 2rem; font-weight: 900; line-height: 1.2;">NT$ 0</div>
+      </div>
+     </div>
+    </div>
+    
+    <div style="margin-top: 20px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+     <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 8px;"><label for="student-grade" style="font-weight: 600; color: #1e40af; white-space: nowrap; font-size: 1.05rem;">年級：</label> <input type="text" id="student-grade" placeholder="例如高一" style="padding: 10px 14px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 1.05rem; width: 110px; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#3b82f6'" onblur="this.style.borderColor='#e5e7eb'"></div>
+      <div style="display: flex; align-items: center; gap: 8px;"><label for="student-name" style="font-weight: 600; color: #1e40af; white-space: nowrap; font-size: 1.05rem;">學生姓名：</label> <input type="text" id="student-name" placeholder="請輸入姓名" style="padding: 10px 14px; border: 2px solid #e5e7eb; border-radius: 6px; font-size: 1.05rem; width: 150px; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#3b82f6'" onblur="this.style.borderColor='#e5e7eb'"></div>
+     </div>
+     <button id="confirm-registration-btn" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 18px 52px; border-radius: 8px; font-weight: 700; font-size: 1.25rem; border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(245, 158, 11, 0.4); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">📋 報名試算單</button>
+    </div>
+   </div>
+   
+   <div id="warning-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; align-items: center; justify-content: center;">
+    <div style="background: white; border-radius: 12px; padding: 36px; max-width: 420px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); text-align: center;">
+     <div style="font-size: 3.5rem; margin-bottom: 18px;">⚠️</div>
+     <div id="warning-message" style="font-size: 1.25rem; font-weight: 600; color: #dc2626; margin-bottom: 28px; line-height: 1.6;"></div>
+     <button id="close-warning-btn" style="background: #3b82f6; color: white; padding: 14px 36px; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; font-size: 1.1rem;">我知道了</button>
+    </div>
+   </div>
+   
+   <div id="download-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; align-items: center; justify-content: center;">
+    <div style="background: white; border-radius: 12px; padding: 36px; max-width: 520px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); text-align: center;">
+     <div style="font-size: 3.5rem; margin-bottom: 18px;">📱</div>
+     <div style="font-size: 1.4rem; font-weight: 700; color: #1e40af; margin-bottom: 18px;">繳費說明</div>
+     <div style="font-size: 1.1rem; color: #475569; margin-bottom: 28px; line-height: 1.9; text-align: left; background: #f8fafc; padding: 24px; border-radius: 8px; border-left: 4px solid #3b82f6;">
+      請將此頁面用<span style="background: #fef08a; padding: 3px 8px; border-radius: 4px; font-weight: 700; color: #92400e;">手機拍照存檔</span>或<span style="background: #fef08a; padding: 3px 8px; border-radius: 4px; font-weight: 700; color: #92400e;">截圖存檔</span>，於現場繳費或轉帳繳費時提供該存檔圖片，便於協助開立收據，感謝您的配合！
+     </div>
+     <div style="margin-top: 18px;"><button id="close-download-btn" style="background: #3b82f6; color: white; padding: 14px 36px; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; font-size: 1.05rem;">我知道了</button></div>
+    </div>
+   </div>
+   
+   <div style="background: white; border-radius: 16px; padding: 36px; margin-bottom: 28px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h2 style="font-size: 2rem; font-weight: 700; color: #1e40af; margin-bottom: 28px; border-bottom: 3px solid #3b82f6; padding-bottom: 14px;">💳 報名方式與繳費資訊</h2>
+    <div style="background: #fef3c7; padding: 18px; border-radius: 8px; margin-bottom: 24px; border-left: 4px solid #f59e0b;">
+     <div style="font-size: 1.3rem; font-weight: 700; color: #92400e; margin-bottom: 14px;">💳 繳費方式</div>
+      
+     <div style="display: grid; gap: 12px;">
+      <div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #92400e; font-weight: 700; white-space: nowrap; font-size: 1.05rem;">方式一：</span> <span style="color: #78350f; font-weight: 600; font-size: 1.05rem;">現場繳費（親至顧群文教繳費）</span></div>
+      <div style="display: flex; align-items: flex-start; gap: 10px;"><span style="color: #92400e; font-weight: 700; white-space: nowrap; font-size: 1.05rem;">方式二：</span> <span style="color: #78350f; font-weight: 600; font-size: 1.05rem;">轉帳繳費（轉帳後請依下列通知方式完成通知）</span></div>
+     </div>
+    </div>
+    <div class="payment-methods-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+     <div style="background: #fef3c7; padding: 24px; border-radius: 8px; border: 2px solid #f59e0b;">
+      <div style="font-size: 1.3rem; font-weight: 700; color: #92400e; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px solid #fbbf24;">💳 方式一：現場繳費</div>
+      <div style="display: grid; gap: 14px;">
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #92400e; margin-bottom: 8px; font-size: 1.05rem;">📍 繳費地點</div>
+        <div style="color: #78350f; font-weight: 600; font-size: 1.05rem;" id="school-name-1">顧群文教</div>
+        <div style="color: #78350f; font-size: 1rem; margin-top: 6px;">桃園市楊梅區文化街196號</div>
+       </div>
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #92400e; margin-bottom: 8px; font-size: 1.05rem;">📞 聯絡電話</div>
+        <div id="phone-number-1" style="font-size: 1.3rem; font-weight: 600; color: #f59e0b;">03-4311558</div>
+       </div>
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #92400e; margin-bottom: 8px; font-size: 1.05rem;">📝 繳費方式</div>
+        <div style="color: #78350f; font-size: 1.05rem;">親至顧群文教繳費</div>
+       </div>
+      </div>
+     </div>
+     <div style="background: #dbeafe; padding: 24px; border-radius: 8px; border: 2px solid #3b82f6;">
+      <div style="font-size: 1.3rem; font-weight: 700; color: #1e40af; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px solid #60a5fa;">🏦 方式二：轉帳繳費</div>
+      <div style="display: grid; gap: 14px;">
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #1e40af; margin-bottom: 8px; font-size: 1.05rem;">🏦 轉帳銀行與帳號</div>
+        <div style="font-size: 1.1rem; color: #1e3a8a;"><span id="bank-name">彰化銀行 (009)</span><br><span id="account-number" style="font-family: monospace; font-weight: 600;">9318-01-001985-00</span></div>
+       </div>
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #1e40af; margin-bottom: 10px; font-size: 1.05rem;">📞 轉帳後通知方式</div>
+        <div style="display: grid; gap: 8px;">
+         <div style="padding: 8px; background: #eff6ff; border-radius: 4px; border-left: 3px solid #3b82f6;"><span style="font-weight: 700; color: #1e40af; font-size: 1rem;">通知方式(1)：</span> <span style="color: #475569; font-size: 1rem;">轉帳後請來電告知後五碼，便開立收據</span></div>
+         <div style="padding: 8px; background: #eff6ff; border-radius: 4px; border-left: 3px solid #3b82f6;"><span style="font-weight: 700; color: #1e40af; font-size: 1rem;">通知方式(2)：</span> <span style="color: #475569; font-size: 1rem;">傳Line訊息給導師，提供轉帳後五碼與存檔圖片</span></div>
+        </div>
+       </div>
+       <div style="background: white; padding: 14px; border-radius: 6px;">
+        <div style="font-weight: 700; color: #1e40af; margin-bottom: 8px; font-size: 1.05rem;">📞 聯絡電話</div>
+        <div id="phone-number-2" style="font-size: 1.3rem; font-weight: 600; color: #3b82f6;">03-4311558</div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+    </div>
+   <div style="background: white; border-radius: 16px; padding: 36px; margin-bottom: 28px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 700; color: #1e40af; margin-bottom: 24px; border-bottom: 3px solid #3b82f6; padding-bottom: 14px;">📢 榮譽榜</h2>    
+    <img src="ad-poster.png" alt="顧群文教最新活動" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
+   </div>
+  </div> <script>
+    // (下方是原本的 Javascript 程式碼...)
+  </div>
+
+  <script>
+    const defaultConfig = {
+      main_title: '117學測 高一全科學測培訓班',
+      subtitle: '奠定基礎 × 系統整合 × 小班制輔導',
+      school_name: '顧群文教',
+      phone_number: '03-4311558',
+      bank_name: '彰化銀行 (009)',
+      account_number: '9318-01-001985-00'
+    };
+
+    const subjects = {
+      english: { name: '英文', price: 24300, selected: false, prereportType: null },
+      math: { name: '數學', price: 24300, selected: false, prereportType: null },
+      science: { name: '自然', price: 24300, selected: false, prereportType: null }
+    };
+
+    function updateSummary() {
+      const selectedSubjectsList = Object.entries(subjects).filter(([_, s]) => s.selected);
+      const selectedCount = selectedSubjectsList.length;
+      const selectedNames = selectedSubjectsList.map(([_, s]) => s.name);
+      
+      const selectedSubjectsEl = document.getElementById('selected-subjects');
+      const discountInfoEl = document.getElementById('discount-info');
+      const totalPriceEl = document.getElementById('total-price');
+      
+      if (selectedCount === 0) {
+        selectedSubjectsEl.textContent = '已選科目：無';
+        discountInfoEl.textContent = '';
+        totalPriceEl.textContent = 'NT$ 0';
+        return;
+      }
+      
+      selectedSubjectsEl.textContent = `已選科目：${selectedNames.join('、')} (${selectedCount}科)`;
+      
+      let earlyCount = 0; let midCount = 0; let lateCount = 0; let noneCount = 0;
+      for (let [key, subject] of selectedSubjectsList) {
+        if(subject.prereportType === 'early') earlyCount++;
+        else if(subject.prereportType === 'mid') midCount++;
+        else if(subject.prereportType === 'late') lateCount++;
+        else noneCount++;
+      }
+
+      // Early discount logic (Bundle pricing)
+      let earlyPrice = 0;
+      if (earlyCount === 1) earlyPrice = 20600;
+      else if (earlyCount === 2) earlyPrice = 38800;
+      else if (earlyCount === 3) earlyPrice = 54600;
+
+      // Mid, Late, and None pricing (Per subject)
+      let midPrice = midCount * 21800;
+      let latePrice = lateCount * 23000;
+      let nonePrice = noneCount * 24300; 
+
+      const finalPrice = earlyPrice + midPrice + latePrice + nonePrice;
+      
+      let infoParts = [];
+      if(earlyCount > 0) infoParts.push(`~5/15預報(${earlyCount}科): $${earlyPrice.toLocaleString()}`);
+      if(midCount > 0) infoParts.push(`5/16~7/3預報(${midCount}科): $${midPrice.toLocaleString()}`);
+      if(lateCount > 0) infoParts.push(`7/4~8/30報名(${lateCount}科): $${latePrice.toLocaleString()}`);
+      if(noneCount > 0) infoParts.push(`原價(${noneCount}科): $${nonePrice.toLocaleString()}`);
+
+      discountInfoEl.textContent = infoParts.join(' ＋ ');
+      totalPriceEl.textContent = `NT$ ${finalPrice.toLocaleString()}`;
+    }
+
+    document.querySelectorAll('.checkbox-custom').forEach(checkbox => {
+      checkbox.addEventListener('change', (e) => {
+        const subjectId = e.target.id.replace('-check', '');
+        
+        // 【回復的傳統防呆邏輯】：若有已勾選但未選報名時間的科目，阻擋勾選下一個
+        if (e.target.checked) {
+          for (let [key, subject] of Object.entries(subjects)) {
+            if (key !== subjectId && subject.selected && !subject.prereportType) {
+              showWarning(`您尚未點選「${subject.name}」的報名時間`);
+              e.target.checked = false;
+              return;
+            }
+          }
+        }
+        
+        subjects[subjectId].selected = e.target.checked;
+        const card = document.querySelector(`[data-subject="${subjectId}"]`);
+        
+        const earlyBtn = card.querySelector('.prereport-early-btn');
+        const midBtn = card.querySelector('.prereport-mid-btn');
+        const lateBtn = card.querySelector('.prereport-late-btn');
+        
+        if (e.target.checked) {
+          card.classList.add('selected');
+          [earlyBtn, midBtn, lateBtn].forEach(b => { 
+             b.disabled = false; b.style.cursor = 'pointer'; 
+          });
+          earlyBtn.style.background = '#fbbf24'; earlyBtn.style.color = '#78350f';
+          midBtn.style.background = '#34d399'; midBtn.style.color = '#064e3b';
+          lateBtn.style.background = '#60a5fa'; lateBtn.style.color = 'white';
+        } else {
+          card.classList.remove('selected');
+          subjects[subjectId].prereportType = null;
+          
+          [earlyBtn, midBtn, lateBtn].forEach(b => {
+             b.disabled = true;
+             b.style.background = '#d1d5db';
+             b.style.color = '#9ca3af';
+             b.style.cursor = 'not-allowed';
+          });
+          earlyBtn.textContent = '~5/15預報';
+          midBtn.textContent = '5/16~7/3預報';
+          lateBtn.textContent = '7/4~8/30報名';
+        }
+        
+        updateSummary();
+      });
+    });
+
+    document.querySelectorAll('.prereport-early-btn, .prereport-mid-btn, .prereport-late-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (btn.disabled) return;
+
+        const subjectId = btn.dataset.subject;
+        const type = btn.dataset.type;
+
+        const card = document.querySelector(`[data-subject="${subjectId}"]`);
+        const earlyBtn = card.querySelector('.prereport-early-btn');
+        const midBtn = card.querySelector('.prereport-mid-btn');
+        const lateBtn = card.querySelector('.prereport-late-btn');
+
+        if (subjects[subjectId].prereportType === type) {
+          // Deselect the discount type -> Revert to base price
+          subjects[subjectId].prereportType = null;
+          earlyBtn.style.background = '#fbbf24'; earlyBtn.style.color = '#78350f'; earlyBtn.textContent = '~5/15預報';
+          midBtn.style.background = '#34d399'; midBtn.style.color = '#064e3b'; midBtn.textContent = '5/16~7/3預報';
+          lateBtn.style.background = '#60a5fa'; lateBtn.style.color = 'white'; lateBtn.textContent = '7/4~8/30報名';
+        } else {
+          // Select a new discount type
+          subjects[subjectId].prereportType = type;
+          earlyBtn.style.background = '#fbbf24'; earlyBtn.style.color = '#78350f'; earlyBtn.textContent = '~5/15預報';
+          midBtn.style.background = '#34d399'; midBtn.style.color = '#064e3b'; midBtn.textContent = '5/16~7/3預報';
+          lateBtn.style.background = '#60a5fa'; lateBtn.style.color = 'white'; lateBtn.textContent = '7/4~8/30報名';
+
+          if (type === 'early') {
+             btn.style.background = '#f59e0b'; btn.style.color = 'white'; btn.textContent = '✓ 已選~5/15';
+          } else if (type === 'mid') {
+             btn.style.background = '#10b981'; btn.style.color = 'white'; btn.textContent = '✓ 已選5/16~7/3';
+          } else if (type === 'late') {
+             btn.style.background = '#3b82f6'; btn.style.color = 'white'; btn.textContent = '✓ 已選7/4~8/30';
+          }
+        }
+        
+        updateSummary();
+      });
+    });
+
+    async function onConfigChange(config) {
+      document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
+      document.getElementById('subtitle').textContent = config.subtitle || defaultConfig.subtitle;
+      
+      const schoolName = config.school_name || defaultConfig.school_name;
+      const schoolNameElements = document.querySelectorAll('[id^="school-name"]');
+      schoolNameElements.forEach(el => el.textContent = schoolName);
+      
+      const phoneNumber = config.phone_number || defaultConfig.phone_number;
+      const phoneElements = document.querySelectorAll('[id^="phone-number"]');
+      phoneElements.forEach(el => el.textContent = phoneNumber);
+      
+      document.getElementById('bank-name').textContent = config.bank_name || defaultConfig.bank_name;
+      document.getElementById('account-number').textContent = config.account_number || defaultConfig.account_number;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['main_title', config.main_title || defaultConfig.main_title],
+        ['subtitle', config.subtitle || defaultConfig.subtitle],
+        ['school_name', config.school_name || defaultConfig.school_name],
+        ['phone_number', config.phone_number || defaultConfig.phone_number],
+        ['bank_name', config.bank_name || defaultConfig.bank_name],
+        ['account_number', config.account_number || defaultConfig.account_number]
+      ]);
+    }
+
+    function showWarning(message) {
+      const modal = document.getElementById('warning-modal');
+      const messageEl = document.getElementById('warning-message');
+      messageEl.textContent = message;
+      modal.style.display = 'flex';
+    }
+    
+    function hideWarning() {
+      const modal = document.getElementById('warning-modal');
+      modal.style.display = 'none';
+    }
+    
+    document.getElementById('close-warning-btn').addEventListener('click', hideWarning);
+    document.getElementById('warning-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'warning-modal') {
+        hideWarning();
+      }
+    });
+
+    function showDownloadModal() {
+      const modal = document.getElementById('download-modal');
+      modal.style.display = 'flex';
+    }
+    
+    function hideDownloadModal() {
+      const modal = document.getElementById('download-modal');
+      modal.style.display = 'none';
+    }
+    
+    document.getElementById('close-download-btn').addEventListener('click', hideDownloadModal);
+    document.getElementById('download-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'download-modal') {
+        hideDownloadModal();
+      }
+    });
+    
+    document.getElementById('confirm-registration-btn').addEventListener('click', () => {
+      const selectedSubjects = Object.entries(subjects).filter(([_, s]) => s.selected);
+      
+      if (selectedSubjects.length === 0) {
+        showWarning('請至少選擇一科報名科目');
+        return;
+      }
+      
+      showDownloadModal();
+    });
+    
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ </body>
+</html>
+    
+  </body>
+  
+</html>
